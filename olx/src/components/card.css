@@ -1,0 +1,50 @@
+.actualCard {
+  border: solid 1px black;
+  width: 250px;
+  height: 285px;
+  position: relative;
+}
+
+.imageof img {
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+}
+
+.year {
+  font-size: 10px;
+  padding-left: 20px;
+}
+.name {
+  font-size: 10px;
+  padding-left: 20px;
+}
+.location {
+  font-size: 10px;
+  padding-left: 20px;
+}
+.posted {
+  font-size: 10px;
+  padding-left: 20px;
+  margin-left: 160px;
+}
+
+.price {
+  font: size 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.heart {
+  background-color: rgb(253, 252, 252);
+  margin-left: 190px;
+
+  z-index: 999;
+  position: absolute;
+  border-radius: 50%;
+  width: 40px; /* Adjust width and height for desired size */
+  height: 40px;
+  display: flex; /* To center the icon within the div */
+  align-items: center; /* To center the icon vertically */
+  justify-content: center;
+}

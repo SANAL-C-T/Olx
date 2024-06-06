@@ -1,0 +1,30 @@
+.foot1{
+    display: flex;
+    margin-top: 50px;
+    height: 150px;
+    background-color:rgb(247, 248, 250);
+
+}
+
+.images img{
+    height: 150px;
+}
+
+.storesImage img{
+height:30px ;
+margin: 10px;
+}
+
+.vertical-line {
+    width: 1px; /* Adjust the width for the thickness of the line */
+    height: 100px; /* Adjust the height for the length of the line */
+    background-color: rgb(165, 162, 162); /* Change the color of the line */
+    margin: 0 auto;
+}
+
+.footertext{
+    padding: 10px; 
+}
+.stores{
+    padding: 10px;
+}
