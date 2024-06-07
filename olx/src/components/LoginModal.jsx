@@ -61,7 +61,7 @@ const LoginModal = ({ show, onHide }) => {
         </Modal.Body>
         <Modal.Footer>
           <div className="footer">
-            <div className="foot1">
+            <div className="foot11">
               All your personal details are safe with us.
             </div>
             <div className="foot2">

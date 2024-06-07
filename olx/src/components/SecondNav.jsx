@@ -5,13 +5,26 @@ import DropDownMenu from '../components/DropDownMenu'
 import { ChevronDownIcon } from "lucide-react";
 
 const SecondNav = () => {
+
+const[show, setShow]=useState(false)
+
+const navToggle=()=>{
+  show===false?setShow(true):setShow(false)
+
+}
+
+
+
   return (
     <div>
       <div className="secondNav">
+        <div className="toggler" onClick={navToggle}>
         <li>ALL CATEGORIES</li>
         <li>
           <ChevronDownIcon size="24" />
         </li>
+        </div>
+    
 
         <li>Cars</li>
 
@@ -29,8 +42,10 @@ const SecondNav = () => {
       </div>
 
       <div className="thirdNav">
+      <div className="thirdNav">
+  {show ? <DropDownMenu /> : null}
+</div>
 
-<DropDownMenu/>
 
       </div>
     </div>

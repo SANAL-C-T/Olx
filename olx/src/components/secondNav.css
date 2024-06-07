@@ -2,13 +2,18 @@
     display: flex;
     justify-content: space-evenly;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
-  
 }
 
 .secondNav li{
-
+flex-wrap: nowrap;
 list-style: none;
 padding-top: 10px;
 padding-bottom: 10px;
+
 }
+
+.toggler{
+    display: flex;
+    cursor: pointer;
+  
 }

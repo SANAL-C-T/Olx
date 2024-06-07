@@ -4,7 +4,7 @@ const DropDownMenu = () => {
   return (
     <div className="dropsContainer">
       <ul>
-        <li className="category-title">OLX Autos (Cars)</li>
+        <li className="category-title">Cars</li>
         <li className="category-title">Properties</li>
         <li className="category-li ">For Sale: Houses & Apartments</li>
         <li className="category-li ">For Rent: Houses & Apartments</li>

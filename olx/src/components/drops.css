@@ -10,11 +10,13 @@
     padding-left:30px;
     padding-right:30px;
     padding-top:30px;
+ 
   }
   
   .dropsContainer ul {
     padding: 0;
     margin: 0;
+  
   }
   
   .category-title {
@@ -31,4 +33,10 @@
   }
   
 
-  
+  .thirdNav{
+    position: absolute; 
+    z-index: 1000;
+ 
+  width:100%;
+    background-color:rgb(255, 255, 255);
+  }

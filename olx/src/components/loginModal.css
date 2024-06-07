@@ -20,7 +20,6 @@
     right: 0; /* Align the caption to the right */
 
   
-    color: rgb(0, 0, 0); /* Text color */
   }
   
   .carouselItem {
@@ -32,9 +31,19 @@
     font-size: small;
     margin-top: 20px;
   }
+  .foot11{
+
+  }
   
+.foot2{
+
+}
+
+
+
   .logEmail {
     text-align: center;
     width: 100%; /* Ensure it takes full width of its container */
+    cursor: pointer;
   }
   
