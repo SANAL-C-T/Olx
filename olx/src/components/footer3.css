@@ -1,0 +1,38 @@
+
+.footer3Container{
+    display: flex;
+    background-color: rgb(0, 48, 52);
+    justify-content: center;
+    align-content: center;
+}
+
+.img1{
+    justify-content: center;
+    align-content: center;
+cursor: pointer;
+}
+.img2{
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.img3{
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.img4{
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.img5{
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.img6{
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
