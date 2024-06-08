@@ -1,0 +1,147 @@
+.formAddData {
+  display: flex;
+
+}
+.formHeading {
+  border: solid 1px rgb(211, 218, 219);
+  padding: 10px;
+}
+
+.formSection {
+  border: solid 1px rgb(211, 218, 219);
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 766px;
+
+}
+
+.selectBrand {
+  width: 389px;
+  height: 30px;
+  margin-left:20px;
+}
+
+
+.Models{
+    width: 389px;
+    height: 30px; 
+    margin-left: 20px;
+}
+
+
+.year input {
+    width: 389px;
+    height: 30px; 
+    margin: 0 auto;
+}
+
+.fuelContainer{
+    margin-left: 20px;
+    display: flex;
+    width: 389px;
+    height: 88px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  
+}
+
+.bubble{
+    margin-left: 20px;
+    width:auto;
+    justify-content: center;
+    align-content: center;
+    height: 36px;
+    border: solid 1px black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: small;
+}
+
+
+.bubble:hover{
+ background-color: rgb(168, 245, 219);
+}
+
+.transContainer{
+    margin-left: 20px;
+    display: flex;
+    width: 389px;
+    height: 88px;
+
+    flex-wrap: wrap;
+  
+}
+
+
+.transbubble{
+    margin-left: 20px;
+    width:auto;
+    justify-content: center;
+    align-content: center;
+    height: 36px;
+    border: solid 1px black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: small; 
+}
+
+
+.transbubble:hover{
+    background-color: rgb(168, 245, 219);
+   }
+
+   .km input {
+    width: 389px;
+    height: 30px; 
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.ownerContainer{
+    margin-left: 20px;
+    display: flex;
+    width: 389px;
+    height: 88px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  
+}
+
+.ownerbubble{
+    margin-left: 20px;
+    width:auto;
+    justify-content: center;
+    align-content: center;
+    height: 36px;
+    border: solid 1px black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: small;
+    
+}
+
+
+.ownerbubble:hover{
+    background-color: rgb(168, 245, 219);
+   }
+
+
+   .titleContainer input{
+    width: 389px;
+    height: 60px; 
+    margin: 0 auto;
+    margin-left: 20px;
+
+
+
+    
+   }
+
+
+   .descriptionContainer input{
+    width: 389px;
+    height: 60px; 
+    margin: 0 auto;
+    margin-left: 20px;
+   }

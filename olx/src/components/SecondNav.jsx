@@ -42,7 +42,7 @@ const navToggle=()=>{
       </div>
 
       <div className="thirdNav">
-      <div className="thirdNav">
+<div className="thirdNav">
   {show ? <DropDownMenu /> : null}
 </div>
 
