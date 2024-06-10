@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/olxLogo.svg";
 import lenss from "../assets/plainSearch.svg";
 import arrowDown from "../assets/chevDown.svg";
@@ -12,6 +13,14 @@ const Navbar = () => {
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
+  const seller = useNavigate();
+
+const handleSell=()=>{
+  seller('/Addproduct')
+}
+
+
+
 
   return (
     <div className="fullNav">
@@ -56,7 +65,7 @@ const Navbar = () => {
       <LoginModal show={showModal} onHide={handleClose} />
 
       <div className="sell">
-        <div className="buttons">
+        <div className="buttons" onClick={handleSell}>
           <img src={sell} alt="sell" />
         </div>
       </div>

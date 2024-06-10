@@ -1,1 +1,0 @@
-import {fireStoreDatabase} from '../firebase';

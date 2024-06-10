@@ -145,3 +145,25 @@
     margin: 0 auto;
     margin-left: 20px;
    }
+
+
+   .priceInput{
+    width: 389px;
+    height: 30px; 
+    margin: 0 auto;
+    margin-left: 20px;
+   }
+
+   .postbutton{
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+   }
+
+   .postbutton button{
+
+padding: 5px;
+border: none;
+   }

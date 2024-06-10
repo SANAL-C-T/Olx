@@ -21,7 +21,7 @@ const LoginModal = ({ show, onHide }) => {
       >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-          <Carousel className="imageCard">
+          <Carousel className="imageCard" indicators={false}>
             <Carousel.Item className="carouselItem">
               <img src={img1} alt="First slide" />
               <Carousel.Caption className="carouselCaption"></Carousel.Caption>
