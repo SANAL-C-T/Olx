@@ -6,6 +6,8 @@ import { db, storage } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
+import { useNavigate } from "react-router-dom";
+
 const Form = () => {
   const [selectedBrand, setBrand] = useState("");
   const [selectModel, setBrandModel] = useState([]);
@@ -17,6 +19,8 @@ const Form = () => {
   const description = useRef();
   const price = useRef();
   const location = useRef();
+
+  const Navigate=useNavigate()
 
   const handleBrandChange = (e) => {
     const inData = e.target.value;
@@ -68,6 +72,9 @@ const Form = () => {
         DateOfPost: date,
       });
       console.log("Document written with ID: ", docRef.id);
+
+Navigate('/')
+
     } catch (e) {
       console.error("Error adding document: ", e);
     }

@@ -1,0 +1,83 @@
+.boxContainer{
+    display: flex;
+margin: 0 auto;
+justify-content: center;
+align-content: center;
+gap: 10px;
+background-color: rgb(243, 244, 246);
+}
+
+.leftBox{
+   
+    width: 700px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.rightBox{
+   
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.namex{
+    height: 50px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+ 
+}
+
+.smallBox{
+
+    font-size: 14px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.descriptionx{
+    font-size: 14px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+
+.smallBoxCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationx{
+    font-size: 14px; 
+}
+
+
+.pricex {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+   
+    padding: 10px;
+  }
+  
+  .pricebtn {
+    width: 100%;
+    margin-top: 10px; 
+    background-color:rgb(0, 48, 52);
+  }
+  
+  .pricebtn button {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px; 
+    border: none; 
+    color: white;
+    background-color: inherit;
+    cursor: pointer; 
+  }
+  
+  

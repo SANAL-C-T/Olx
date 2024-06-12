@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/olxLogo.svg";
 import lenss from "../assets/plainSearch.svg";
@@ -7,10 +7,12 @@ import blocklens from "../assets/Screenshot 2024-06-06 152940 1.svg";
 import sell from "../assets/Frame 1.svg";
 import LoginModal from "./LoginModal";
 import "./nav.css";
-
+import AuthContext from "../context/authContext";
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
-
+const {userLogged,setUserLogged} =useContext(AuthContext )
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
   const seller = useNavigate();
@@ -20,6 +22,15 @@ const handleSell=()=>{
 }
 
 
+const handleLogout = async () => {
+  try {
+      await signOut(auth);
+      setUserLogged(false)
+      console.log("User logged out successfully");
+  } catch (error) {
+      console.error("Error logging out:", error);
+  }
+};
 
 
   return (
@@ -58,9 +69,18 @@ const handleSell=()=>{
         </div>
       </div>
 
-      <div className="login">
-        <span onClick={handleShow}>Login</span>
-      </div>
+
+      {userLogged === false ? (
+  <div className="login">
+    <span onClick={handleShow}>Login</span>
+  </div>
+) : (
+  <div className="login">
+    <span onClick={handleLogout}>Logout</span>
+  </div>
+)}
+
+      
 
       <LoginModal show={showModal} onHide={handleClose} />
 

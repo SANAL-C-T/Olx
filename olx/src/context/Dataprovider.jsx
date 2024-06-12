@@ -20,8 +20,12 @@ const DataContextProvider = ({ children }) => {
             const querySnapshot = await getDocs(dataCollectionRef);
             let fetchedData = [];
             querySnapshot.forEach(doc => {
-                fetchedData.push(doc.data());
+                fetchedData.push({
+                    id: doc.id, // Add the document ID as part of the object
+                    ...doc.data() // Spread the rest of the document data
+                });
             });
+            
             console.log("Fetched data:", fetchedData); // Log fetched data to console
             setData(fetchedData); // Set the data from Firestore
         } catch (error) {

@@ -1,32 +1,34 @@
 import React from "react";
 import "./card.css";
-import imagess from "../assets/image.jpeg";
 import { Heart } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
-const Card = () => {
-  const items = useNavigate();
 
-const handleitem=()=>{
-  items('/ProductDetail');
-}
+const Card = ({ details }) => {
+  const navigate = useNavigate();
 
-
+  const handleItemClick = (id) => {
+    navigate(`/ProductDetail/${id}`); // Navigate to ProductDetail page with item ID
+  };
 
   return (
     <div className="cardContainer">
-        
-      <div className="actualCard" onClick={handleitem}>
-      <div className="heart">< Heart size="24" color="black" /></div>
-        <div className="imageof">
-          <img src={imagess} alt=""></img>
+      {details.map((item, idx) => (
+        <div key={idx} className="actualCard" onClick={() => handleItemClick(item.id)}>
+          <div className="heart">
+            <Heart size={24} color="black" />
+          </div>
+          <div className="imageof">
+            <img src={item.imageUrls} alt={item.title} />
+          </div>
+          <div className="price">₹ {item.price}</div>
+          <div className="year">{item.Year} - {item.kilometerDriven} km</div>
+          <div className="name">{item.title}</div>
+          <div className="location">{item.location}</div>
+          <div className="posted">TODAY</div>
         </div>
-        <div className="price">₹ 100000</div>
-        <div className="year">2015 - 110000 km</div>
-        <div className="name">BMW (Petrol)</div>
-        <div className="location">DEVINAGAR, KOLLAM</div>
-        <div className="posted">TODAY</div>
-      </div>
+      ))}
     </div>
   );
 };
+
 export default Card;

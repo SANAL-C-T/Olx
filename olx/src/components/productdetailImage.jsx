@@ -1,17 +1,19 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './productImage.css'
-function ProductdetailImage() {
+
+function ProductdetailImage({ imageUrl }) {
   return (
     <Carousel interval={null} indicators={false}>
-      <Carousel.Item className='CarouselImageContainer'>
-        <img
-          src="https://via.placeholder.com/800x400.png?text=First+Slide"
-          alt="First slide"
-         
-        />
-      </Carousel.Item>
-   
+      {imageUrl.map((x, index) => (
+        <Carousel.Item className="CarouselImageContainer" key={index}>
+          <img
+            src={x}
+            alt={`Slide ${index}`}
+            
+          />
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

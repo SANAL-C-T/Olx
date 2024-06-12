@@ -1,25 +1,28 @@
+// firebase.js
 
 import { initializeApp } from "firebase/app";
-import { GoogleAuthProvider,getAuth } from "firebase/auth";
-import {getFirestore} from "firebase/firestore"
-import {getStorage} from 'firebase/storage'
+import { getAuth,onAuthStateChanged } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
-const firebaseConfig = {
-  apiKey:import.meta.env.VITE_FIRE_BASE_API_KEY,
-  authDomain:"olx-clone-bc603.firebaseapp.com",
-  projectId:import.meta.env.VITE_FIRE_BASE_PROJECT_ID,
-  databaseURL:"gs://olx-clone-bc603.appspot.com",
-  storageBucket:"olx-clone-bc603.appspot.com",
-  messagingSenderId:"49974343745",
-  appId:import.meta.env.VITE_FIRE_BASE_API_ID
-
-
+export const firebaseConfig = {
+ 
 };
 
-
 const app = initializeApp(firebaseConfig);
-
-export const fireStoreDatabase =getFirestore(app);
-export const auth =getAuth(app);
+export const auth = getAuth(app);
+export const fireStoreDatabase = getFirestore(app);
+export const storage = getStorage(app);
 export const db = getFirestore(app);
-export const storage =getStorage(app);
+
+export default app;
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+      // User is signed in
+      console.log("User is logged in:", user);
+  } else {
+      // User is signed out
+      console.log("User is logged out");
+  }
+});
